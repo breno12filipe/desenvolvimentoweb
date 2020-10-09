@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js03_parseInt.htm - somatoria com entrada de dados por formulário</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h3>Somatória de dois números</h3>
+
+        <form name="MeuFormulario" action=" " method="POST">
+            Entre com o valor 1: <input type="text" name="f_n1"><p></p>
+            Entre com o valor 2: <input type="text" name="f_n2"><p></p>
+            <input type="button" name="btn_somar" value="Somar" onclick="soma()">
+            <input type="reset" name="btn_apagar" value="Apagar">
+        </form>   
+
+        <script language="javascript">
+            var js_n1;
+            var js_n2;
+            var js_soma;
+
+            function soma(){
+                js_n1 = parseInt(document.MeuFormulario.f_n1.value);
+                js_n2 = parseInt(document.MeuFormulario.f_n2.value);
+
+                js_soma =js_n1 + js_n2;
+
+                document.write('Resultado da Somatória = ' + js_soma.toString());
+            }
+
+        </script>
+    </body>
+
+</html>

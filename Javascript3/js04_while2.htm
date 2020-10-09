@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js04_while.htm - condicional</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script language="JavaScript">
+            var js_contador = 1;
+            var js_resposta = true;
+
+            while(js_resposta == true){
+                document.write('<p>' + js_contador + 'ª Repetição de uma única linha de comando dentro de um laço condicional:');
+                js_contador += 1;
+                js_resposta = window.confirm('Deseja continuar?');
+            }
+        </script>
+    </body>
+</html>
