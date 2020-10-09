@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <base href="http://www.educatux.com.br/">
+</head>
+<body>
+
+    <p>parágrafo formatado usando basefont</p>
+
+    <!--A tag <basefont> não tem mais suporte no HTML5-->
+    
+    <p><font size="5">Mudando tamanho da fonte para 5</font></p>
+    
+    <font color='990000'>texto vermelho usando hexadecimal</font>
+    <br>
+    <font color="red">texto vermelho, usando palavra em ingles</font>
+    <p><font face="Bookman Old Style, Book Antiqua, Garamond">Mudando a face da fonte de um texto</font></p>
+    <p><font size="7" face="Georgia, Arial" color="maroon">C</font>ustomize sua fonte para conseguir o look que deseja</p>
+
+    <!--Links de text-->
+    <a href="http://www.educatux.com.br" target="_blank" title="EducatuX">EducatuX</a> <!-- link global-->
+    <a href="./img.png">link local</a> 
+    <a href="#anchorname">link interno</a>
+
+    <h1>HTML - Hipertexto de Referência/ href <a name="top"></a></h1>
+    <h2>HTML - Links de Texto<a name="text"></a></h2>
+    <h2>HTML - Texto de E-mail<a name="email"></a></h2>
+
+    <a href="#top">Ir para cima</a><br>
+    <a href="#text">Aprender sobre links de texto</a><br>
+    <a href="#email">Aprender sobre endereços de e-mail</a><br>
+
+    <a href="mailto:someone@example.com?subject=Questions">Perguntas aqui</a>
+    <a href="mailto:someone@example.com?subject=Questions&body=Write here if you have questions">Perguntas aqui</a>
+
+    <p>Nesta frase foi introduzido &nbsp;&nbsp;&nbsp;&nbsp; mais espaços</p> <!--&nbsp; representa um espaço-->
+    <p>
+        Less Then- &lt; <br>
+        More Then- &gt; <br/>
+        Head Tag -&lt;head&gt;
+    </p>
+
+    <img alt="html image example" src="https://whiplash.net/imagens_promo/rush_facebook2_corte.jpg" width="120" height="75" align="right">
+
+    <a href="http://www.educatux.com.br" title="HTML link image example">
+        <img alt="html image example" src="https://www.educatux.com.br/educatux98.png" width="120" height="75">
+    </a>
+
+    <a href="http://listverse.com/wp-content/uploads/2009/03/2787648-death-band.jpg.jpeg" title="HTML image thumbnail example">
+        <img alt="html image example" src="http://getwallpapers.com/wallpaper/full/c/d/8/653767.jpg" width="66" height="49">
+    </a>
+
+    <a href="http://www.educatux.com.br/" title="This is an HTML liked image">
+        <img alt="alternative text for the liked image"
+             src="https://tse3.mm.bing.net/th?id=OIP.no0803MWwaRn43Xt0OFncQAAAA&pid=Api&P=0&w=181&h=154"
+             width="120"
+             height="75"
+             border="5"
+             style="border:5px solid #337AB7"
+        
+        />
+    </a>
+
+    <!-- Formulário-->
+
+    <form method="POST" action="mailto:breno.filipe@sempreceub.com">
+        Nome:<input type="text" size="10" maxlength="40" name="name"/><br>
+        Senha:<input type="password" size="10" maxlength="10" name="passoword">
+    </form>
+
+    <input type="submit" value="send">
+
+    <p>Que tipos de sapatos você está usando?</p>
+
+    <label>Color:</label><br>
+
+    <input type="radio" name="color" value="dark">Claro<br>
+    <input type="radio" name="color" value="light">Escuro<br>
+
+    <label>Size:</label><br>
+    <input type="radio" name="size" value="small">Pequeno<br>
+    <input type="radio" name="size" value="average">Normal<br>
+    <input type="radio" name="size" value="big">Grande<br>
+
+    <input type="submit" value="Email Myself">
+    <br>
+
+    <form method="POST" action="mailto:breno.filipe@sempreceub.com">
+        <p>Preferência musical</p>
+        
+        <select multiple name="music" size="4">
+            <option value="metal/rock" selected>Metal/rock</option>
+            <option value="rap">RAP</option>
+            <option value="country">Country</option>
+            <option value="classical">Classical</option>
+            <option value="techno">Techno</option>
+
+        </select><br>
+
+        <input type="submit" value="Email Yourself">
+
+    </form>
+
+    <form method="POST" action="mailto:youremail@email.com">
+        <p>Nível de educação</p>
+        
+        <select name="education">
+            <option>Ensino Médio</option>
+            <option>Faculdade</option>
+            <option>Doutorado</option>
+        </select><br>
+
+        <input type="submit" value="Email Yourself">
+    </form>
+
+    <p>Upload de arquivo</p>
+    <input type="hidden" name="MAX_FILE_SIZE" value="100"><input name="file" type="file">
+
+    <form method="POST" action="mailto:youremail@email.com">
+        <textarea rows="5" cols="20" wrap="physical" name="comments">Escreva um comentário</textarea><br>
+
+        <input type="submit" value="Email yourself">
+    </form>
+    
+
+</html>
