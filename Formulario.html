@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form method="POST">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+        <div>
+            <label>Nome:</label>
+            <input type="text" name="Nome"><br>
+            <label>Endereço:</label>
+            <input type="text" name="Endereco"><br>
+            <label>Cidade:</label>
+            <input type="text" name="Cidade"><br>
+            <label>Estado:</label>
+            <select name="Estado"><br>
+                <option value="1">São Paulo</option>
+                <option value="2">Rio de Janeiro</option>
+                <option value="3">Distrito Federal</option>
+                <option value="4">Rio Grande do Sul</option>
+                <option value="5">Rio Grande do Norte</option>
+            </select>
+        </div>
+    </fieldset>
+        <br><br>
+        <div>
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label for="NaturezaCargo">Natureza do Cargo</label>
+                <input type="radio" value="Gerencia">Gerência
+                <input type="radio" value="Financeiro">Financeiro
+                <input type="radio" value="Recepção">Recepção
+                <input type="radio" value="Administrativo">Administrativo
+                <input type="radio" value="Juridico">Jurídico<br><br><br>
+                <label for="AreaInteresse">Area de interesse</label>
+                <input type="checkbox">Computação
+                <input type="checkbox">Biologia
+                <input type="checkbox">Meio ambiente
+                <input type="checkbox">Engenharia
+                <input type="checkbox">História
+                <div>
+                    <label>Mini Curriculo</label>
+                    <textarea cols="38" rows="5"></textarea>
+                </div>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    
+    </form>
+
+</body>
+</html>
